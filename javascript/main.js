@@ -38,7 +38,7 @@ function appari()  {
     var numeroCarrozza = document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 10) + 1;
 
     // Codice CP
-    var numeroCarrozza = document.getElementById("codice_cp").innerHTML = Math.floor(Math.random(0) * 10000) + 90000;
+    var numeroCarrozza = document.getElementById("codice_cp").innerHTML = Math.floor(Math.random() * 10000) + 90000;
 
     // Calcolo prezzo finale
     
