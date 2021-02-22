@@ -13,16 +13,17 @@ function appari()  {
 
         // Nome e Cognome
         var nomeCognome = document.getElementById("nome").value;
-        if (isNaN(nomeCognome)) {
+        // Km Viaggio
+        var kmViaggio = document.getElementById("km").value;
+
+        // Esecuzione per compilazione corretta
+        if (isNaN(nomeCognome) && (kmViaggio != 0)) {
 
             // Visualizza Biglietto
             bigliettoTreno.style.display = "block";
 
             // Nome Passeggero
-            nomePasseggero = document.getElementById("passeggero").innerHTML = nomeCognome;
-
-            // Km Viaggio
-            var kmViaggio = document.getElementById("km").value;
+            nomePasseggero = document.getElementById("passeggero").innerHTML = nomeCognome;            
 
             // Offerta
             var etaPasseggero = document.getElementById("selezione").value;
@@ -57,10 +58,11 @@ function appari()  {
                 prezzoFinale = tariffaSenior;
             }
             var costoViaggio = document.getElementById("costo").innerHTML = prezzoFinale + "€";
-
         }
+
+        //Campi compilati incorrettamente
         else {
-        alert("Non utilizzare valori numerici per Nome e Cognome");
+        alert("Compilare correttamente i campi");
         location.reload();
         }
     }
