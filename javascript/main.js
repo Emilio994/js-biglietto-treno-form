@@ -1,10 +1,4 @@
-// Variabili
-var nome = document.getElementById("nome").value;
-console.log(nome);
-var kmViaggio = document.getElementById("km").value;
-console.log(kmViaggio);
-var etaPasseggero = document.getElementById("selezione").value;
-console.log(etaPasseggero);
+// Variabili essenziali pre-esecuzione
 var bigliettoTreno = document.getElementById("biglietto");
 console.log(bigliettoTreno)
 var generaBiglietto = document.getElementById("genera");
@@ -17,17 +11,21 @@ console.log(refreshPagina);
 generaBiglietto.addEventListener ('click', 
 function appari()  {
     bigliettoTreno.style.display = "block";
+
     // Nome
     var nome = document.getElementById("nome").value;
     nomePasseggero = document.getElementById("passeggero").innerHTML = nome;
+
     // Offerta
     var etaPasseggero = document.getElementById("selezione").value;
     offertaPrezzo = document.getElementById("sconto").innerHTML = "Sconto " + etaPasseggero;
+
     // Carrozza
     var numeroCarrozza = document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 10) + 1;
+
     // Codice CP
     var numeroCarrozza = document.getElementById("codice_cp").innerHTML = Math.floor(Math.random(90000) * 100000);
-    // Prezzo Finale
+
     // Calcolo prezzo finale
     var kmViaggio = document.getElementById("km").value;
     // Costanti
