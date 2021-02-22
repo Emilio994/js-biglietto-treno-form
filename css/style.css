@@ -1,0 +1,93 @@
+/* COMMON */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #B91450;
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  color: white;;
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0px;
+}
+.wrapper .row:first-of-type {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px;
+  padding: 40px 200px;
+  margin: 20px 0px 40px 0px;
+}
+.wrapper .row:last-of-type {
+  background-color: white;
+  padding: 20px;
+}
+
+
+/* UTILITIES */
+.text_center {
+  text-align: center;
+}
+
+
+/* Form */
+.form_container {
+  display: flex;
+  justify-content: space-between;
+}
+.col {
+  display: flex;
+  flex-flow: column wrap;
+}
+.col label {
+  color: #B91450;
+  margin-bottom: 15px;
+}
+.col input,
+.col select {
+  border: 1.5px solid #B91450;
+  border-radius: 5px;
+  padding: 4px 0;
+  font-size: 15px;
+}
+.row .button_box button {
+  color: #B91450;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 4px 6px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 50px 0px 0px 15px;
+}
+
+/* Biglietto */
+.wrapper .row:last-of-type .ticket_details {
+  display: flex;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.row .table_left {
+  background-color: grey;
+  padding: 15px;
+}
+.row .table_right {
+  padding: 15px;
+  flex-grow: 4;
+}
+.row .table_right table {
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
