@@ -18,13 +18,21 @@ function appari()  {
 
     // Offerta
     var etaPasseggero = document.getElementById("selezione").value;
-    offertaPrezzo = document.getElementById("sconto").innerHTML = "Sconto " + etaPasseggero;
+    if (etaPasseggero == (value = "Minorenne")) {
+        offertaPrezzo = document.getElementById("sconto").innerHTML = "Sconto " + etaPasseggero;
+    }
+    else if (etaPasseggero == (value = "Over 65")) {
+        offertaPrezzo = document.getElementById("sconto").innerHTML = "Sconto " + etaPasseggero;
+    }
+    else {
+        offertaPrezzo = document.getElementById("sconto").innerHTML = etaPasseggero; 
+    }
 
     // Carrozza
     var numeroCarrozza = document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 10) + 1;
 
     // Codice CP
-    var numeroCarrozza = document.getElementById("codice_cp").innerHTML = Math.floor(Math.random(90000) * 100000);
+    var numeroCarrozza = document.getElementById("codice_cp").innerHTML = Math.floor(Math.random(0) * 10000) + 90000;
 
     // Calcolo prezzo finale
     
