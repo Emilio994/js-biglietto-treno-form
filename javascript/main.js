@@ -12,12 +12,6 @@ console.log(generaBiglietto);
 var refreshPagina = document.getElementById("annulla");
 console.log(refreshPagina);
 
-// Costanti
-const tariffaStandard = 0.21 * kmViaggio;
-const tariffaYoung = (0.21 * kmViaggio) * 0.8;
-const tariffaSenior = (0.21 * kmViaggio) * 0.6;
-
-
 
 // Genera Biglietto
 generaBiglietto.addEventListener ('click', 
@@ -36,6 +30,10 @@ function appari()  {
     // Prezzo Finale
     // Calcolo prezzo finale
     var kmViaggio = document.getElementById("km").value;
+    // Costanti
+    const tariffaStandard = 0.21 * kmViaggio;
+    const tariffaYoung = (0.21 * kmViaggio) * 0.8;
+    const tariffaSenior = (0.21 * kmViaggio) * 0.6;
     if (etaPasseggero == (value = "Maggiorenne")) {
         prezzoFinale = tariffaStandard;
     }
