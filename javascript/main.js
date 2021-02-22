@@ -11,15 +11,15 @@ console.log(refreshPagina);
 generaBiglietto.addEventListener ('click', 
 function appari()  {
 
-        // Nome
-        var nome = document.getElementById("nome").value;
-        if (isNaN(nome)) {
-            
+        // Nome e Cognome
+        var nomeCognome = document.getElementById("nome").value;
+        if (isNaN(nomeCognome)) {
+
             // Visualizza Biglietto
             bigliettoTreno.style.display = "block";
 
             // Nome Passeggero
-            nomePasseggero = document.getElementById("passeggero").innerHTML = nome;
+            nomePasseggero = document.getElementById("passeggero").innerHTML = nomeCognome;
 
             // Km Viaggio
             var kmViaggio = document.getElementById("km").value;
