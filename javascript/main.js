@@ -14,10 +14,16 @@ function appari()  {
         // Nome
         var nome = document.getElementById("nome").value;
         if (isNaN(nome)) {
+            
             // Visualizza Biglietto
             bigliettoTreno.style.display = "block";
+
             // Nome Passeggero
             nomePasseggero = document.getElementById("passeggero").innerHTML = nome;
+
+            // Km Viaggio
+            var kmViaggio = document.getElementById("km").value;
+
             // Offerta
             var etaPasseggero = document.getElementById("selezione").value;
             if (etaPasseggero == (value = "Minorenne")) {
@@ -37,10 +43,6 @@ function appari()  {
             var numeroCarrozza = document.getElementById("codice_cp").innerHTML = Math.floor(Math.random() * 10000) + 90000;
 
             // Calcolo prezzo finale
-            
-            var kmViaggio = document.getElementById("km").value; //Questa variabile si trova qui cosicchè le constanti ne acquisiscano il valore a seguito di input dall'utete.
-
-            // Costanti
             const tariffaStandard = Math.round(((0.21 * kmViaggio) + Number.EPSILON) * 100) / 100;
             const tariffaYoung = Math.round(((0.21 * kmViaggio * 0.8) + Number.EPSILON) * 100) / 100;
             const tariffaSenior = Math.round(((0.21 * kmViaggio * 0.6) + Number.EPSILON) * 100) / 100;
