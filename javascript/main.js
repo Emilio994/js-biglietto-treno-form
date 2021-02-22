@@ -27,11 +27,14 @@ function appari()  {
     var numeroCarrozza = document.getElementById("codice_cp").innerHTML = Math.floor(Math.random(90000) * 100000);
 
     // Calcolo prezzo finale
-    var kmViaggio = document.getElementById("km").value;
+    
+    var kmViaggio = document.getElementById("km").value; //Questa variabile si trova qui cosicchè le constanti ne acquisiscano il valore a seguito di un input dell'utete.
+
     // Costanti
-    const tariffaStandard = 0.21 * kmViaggio;
-    const tariffaYoung = (0.21 * kmViaggio) * 0.8;
-    const tariffaSenior = (0.21 * kmViaggio) * 0.6;
+    const tariffaStandard = Math.round(((0.21 * kmViaggio) + Number.EPSILON) * 100) / 100;
+    const tariffaYoung = Math.round(((0.21 * kmViaggio * 0.8) + Number.EPSILON) * 100) / 100;
+    const tariffaSenior = Math.round(((0.21 * kmViaggio * 0.6) + Number.EPSILON) * 100) / 100;
+
     if (etaPasseggero == (value = "Maggiorenne")) {
         prezzoFinale = tariffaStandard;
     }
