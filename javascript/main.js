@@ -14,7 +14,13 @@ function appari()  {
 
     // Nome
     var nome = document.getElementById("nome").value;
+    if (isNaN(nome)) {
     nomePasseggero = document.getElementById("passeggero").innerHTML = nome;
+    }
+    else {
+        alert("Non utilizzare valori numerici per Nome e Cognome");
+        location.reload();
+    }
 
     // Offerta
     var etaPasseggero = document.getElementById("selezione").value;
