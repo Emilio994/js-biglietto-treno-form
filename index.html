@@ -18,17 +18,17 @@
           <div class="form_container">            
             <div class="col">
               <label for="Nome e cognome">Nome e Cognome</label>
-              <input class="text_center" type="text" placeholder="Nome e Cognome">        
+              <input class="text_center" type="text" placeholder="Nome e Cognome" id="nome" value="">        
             </div>
     
             <div class="col">
-              <label for="km">Km da percorrere</label>
-              <input class="text_center" type="number" placeholder="Inserire km">
+              <label for="kms">Km da percorrere</label>
+              <input class="text_center" type="number" placeholder="Inserire km" id="km" value="">
             </div>
     
             <div class="col">
               <label for="eta">Fascia di età</label>
-              <select name="età" id="">
+              <select name="età" id="selezione">
                 <option value="Maggiorenne">Maggiorenne</option>
                 <option value="Minorenne">Minorenne</option>
                 <option value="Over 65">Over 65</option>            
@@ -36,14 +36,14 @@
             </div>             
           </div>   
           <div class="button_box">
-            <button class="text_center genera">Genera</button>
-            <button class="text_Center annulla">Annulla</button>
+            <button class="text_center" id="genera">Genera</button>
+            <button class="text_Center" id="annulla">Annulla</button>
           </div>                    
         </div>
 
         <!-- Biglietto -->
         <h1 class="text_center">IL TUO BIGLIETTO</h1>
-        <div class="row">
+        <div class="row hidden" id="biglietto">
           <h3>DETTAGLIO PASSEGGERI</h3>
           <div class="ticket_details">
             <div class="table_left">
@@ -55,7 +55,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><h4>Pippo</h4></td>
+                    <td><h4 id="passeggero">Pippo</h4></td>
                   </tr>
                 </tbody>
               </table>

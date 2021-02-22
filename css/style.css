@@ -33,6 +33,9 @@ h1 {
 .text_center {
   text-align: center;
 }
+.hidden {
+  display: none;
+}
 
 
 /* Form */
