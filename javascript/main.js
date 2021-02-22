@@ -42,7 +42,7 @@ function appari()  {
 
     // Calcolo prezzo finale
     
-    var kmViaggio = document.getElementById("km").value; //Questa variabile si trova qui cosicchè le constanti ne acquisiscano il valore a seguito di un input dall'utete.
+    var kmViaggio = document.getElementById("km").value; //Questa variabile si trova qui cosicchè le constanti ne acquisiscano il valore a seguito di input dall'utete.
 
     // Costanti
     const tariffaStandard = Math.round(((0.21 * kmViaggio) + Number.EPSILON) * 100) / 100;
