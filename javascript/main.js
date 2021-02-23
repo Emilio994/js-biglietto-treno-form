@@ -27,10 +27,7 @@ function appari()  {
 
             // Offerta
             var etaPasseggero = document.getElementById("selezione").value;
-            if (etaPasseggero == (value = "Minorenne")) {
-                offertaPrezzo = document.getElementById("sconto").innerHTML = "Sconto " + etaPasseggero;
-            }
-            else if (etaPasseggero == (value = "Over 65")) {
+            if ((etaPasseggero == (value = "Minorenne")) || (etaPasseggero == (value = "Over 65"))) {
                 offertaPrezzo = document.getElementById("sconto").innerHTML = "Sconto " + etaPasseggero;
             }
             else {
