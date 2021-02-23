@@ -46,15 +46,14 @@ function appari()  {
             const tariffaSenior = Math.round(((0.21 * kmViaggio * 0.6) + Number.EPSILON) * 100) / 100;
 
             if (etaPasseggero == (value = "Maggiorenne")) {
-                prezzoFinale = tariffaStandard;
+                prezzoFinale = document.getElementById("costo").innerHTML = tariffaStandard + "€";
             }
             else if (etaPasseggero == (value = "Minorenne")) {
-                prezzoFinale = tariffaYoung;
+                prezzoFinale = document.getElementById("costo").innerHTML = tariffaYoung + "€";
             }
             else {
-                prezzoFinale = tariffaSenior;
+                prezzoFinale = document.getElementById("costo").innerHTML = tariffaSenior + "€";
             }
-            var costoViaggio = document.getElementById("costo").innerHTML = prezzoFinale + "€";
         }
 
         //Campi compilati incorrettamente
