@@ -1,6 +1,4 @@
 // Variabili essenziali pre-esecuzione
-var bigliettoTreno = document.getElementById("biglietto");
-console.log(bigliettoTreno)
 var generaBiglietto = document.getElementById("genera");
 console.log(generaBiglietto);
 var refreshPagina = document.getElementById("annulla");
@@ -20,7 +18,8 @@ function appari()  {
         if (isNaN(nomeCognome) && (kmViaggio != 0)) {
 
             // Visualizza Biglietto
-            bigliettoTreno.style.display = "block";
+            var bigliettoTreno = document.getElementById("biglietto");
+            bigliettoTreno.style.opacity = "1";
 
             // Nome Passeggero
             nomePasseggero = document.getElementById("passeggero").innerHTML = nomeCognome;            
@@ -63,7 +62,6 @@ function appari()  {
         }
     }
 );
-
 
 // Refresh
 refreshPagina.addEventListener ('click',

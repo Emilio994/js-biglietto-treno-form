@@ -34,7 +34,7 @@ h1 {
   text-align: center;
 }
 .hidden {
-  display: none;
+  opacity: 0;
 }
 
 
@@ -58,6 +58,14 @@ h1 {
   padding: 4px 0;
   font-size: 15px;
 }
+.col input:focus,
+.col select:focus {
+  background-color: #B91450;
+  color: white;
+}
+.col input:focus::placeholder {
+  color: white;
+}
 .row .button_box button {
   color: #B91450;
   font-size: 20px;
@@ -67,8 +75,15 @@ h1 {
   border: 1px solid black;
   margin: 50px 0px 0px 15px;
 }
+.row .button_box button:focus {
+  background-color: #B91450;
+  color: white;;
+}
 
 /* Biglietto */
+.wrapper .row:last-of-type {
+  transition: 0.5s;
+}
 .wrapper .row:last-of-type .ticket_details {
   display: flex;
   border-top: 1px solid grey;
